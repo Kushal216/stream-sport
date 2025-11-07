@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
         {/* Branding */}
         <div>
-          <h2 className="text-2xl font-bold text-red-400 mb-2">StreamSport</h2>
+          <h2 className="text-2xl font-bold text-red-400 mb-2">Stream Sport</h2>
           <p className="text-gray-400 text-sm">
             Your ultimate platform for live sports broadcasting.
           </p>
@@ -28,7 +28,7 @@ export default function Footer() {
             </li>
             <li>
               <Link href="/" className="hover:text-red-400 transition-colors">
-                Home
+                FAQ
               </Link>
             </li>
           </ul>
@@ -58,7 +58,7 @@ export default function Footer() {
       </div>
 
       <div className="mt-10 text-gray-500 text-sm text-center border-t border-gray-700 pt-4">
-        © {new Date().getFullYear()} StreamSport. All Rights Reserved.
+        © {new Date().getFullYear()} Stream Sport. All Rights Reserved.
       </div>
     </footer>
   );

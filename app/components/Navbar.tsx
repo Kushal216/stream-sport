@@ -21,10 +21,11 @@ export default function Navbar() {
 
   const links = [
     { href: "/", label: "Home" },
-    { href: "#gallery", label: "Gallery" },
-    { href: "#schedule", label: "Schedules" },
-    { href: "/privacy-policy", label: "Privacy Policy" },
-    { href: "/terms-and-conditions", label: "Terms" },
+    { href: "/gallery", label: "Gallery" },
+    { href: "/features", label: "Features" },
+    { href: "/plans", label: "Plans" },
+    // { href: "/privacy-policy", label: "Privacy Policy" },
+    // { href: "/terms-and-conditions", label: "Terms" },
   ];
 
   return (
