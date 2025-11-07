@@ -1,11 +1,19 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white py-12 px-6 mt-20 border-t border-gray-700">
+    <footer className="bg-gray-900 text-white py-12 px-6 border-t border-gray-700">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
         {/* Branding */}
-        <div>
+        <div className="flex flex-col items-center md:items-start">
+          <Image
+            src="/logo.png"
+            alt="Stream Sport Logo"
+            width={60}
+            height={60}
+            className="mb-3 rounded-2xl"
+          />
           <h2 className="text-2xl font-bold text-red-400 mb-2">Stream Sport</h2>
           <p className="text-gray-400 text-sm">
             Your ultimate platform for live sports broadcasting.
@@ -27,7 +35,7 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link href="/" className="hover:text-red-400 transition-colors">
+              <Link href="/faq" className="hover:text-red-400 transition-colors">
                 FAQ
               </Link>
             </li>
@@ -39,7 +47,10 @@ export default function Footer() {
           <h3 className="font-semibold text-gray-300 mb-2">Contact</h3>
           <p className="text-gray-400 mb-2">
             Email:{" "}
-            <a href="mailto:sportyshishir@gmail.com" className="text-blue-400 hover:text-blue-500">
+            <a
+              href="mailto:sportyshishir@gmail.com"
+              className="text-blue-400 hover:text-blue-500"
+            >
               sportyshishir@gmail.com
             </a>
           </p>
